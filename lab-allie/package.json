@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This project is an Angular application using three views. One view shows the home page, a second view shows the signup page, and a third view takes the user to their photo gallery.",
   "main": "karma.conf.js",
+  "engines": {
+    "node": "6.10.2"
+  },
   "directories": {
     "test": "test"
   },
@@ -16,6 +19,7 @@
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.4",
     "dotenv": "^4.0.0",
+    "express": "^4.15.3",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.11.2",
     "html-loader": "^0.4.5",
@@ -43,7 +47,9 @@
     "watch": "webpack-dev-server --inline --hot",
     "build": "webpack",
     "lint": "eslint",
-    "test-watch": "karma start --auto-watch"
+    "test-watch": "karma start --auto-watch",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p --progress"
   },
   "author": "Allie Grampa",
   "license": "MIT"
