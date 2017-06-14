@@ -2,7 +2,7 @@
   "name": "lab-allie",
   "version": "1.0.0",
   "description": "This project is an Angular application using three views. One view shows the home page, a second view shows the signup page, and a third view takes the user to their photo gallery.",
-  "main": "karma.conf.js",
+  "main": "server.js",
   "engines": {
     "node": "6.10.2"
   },
@@ -49,7 +49,7 @@
     "lint": "eslint",
     "test-watch": "karma start --auto-watch",
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p --progress"
+    "heroku-postbuild": "webpack --progress"
   },
   "author": "Allie Grampa",
   "license": "MIT"
